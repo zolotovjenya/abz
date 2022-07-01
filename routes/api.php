@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\PositionController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,4 +20,26 @@ use App\Http\Controllers\UserController;
     return $request->user();
 });*/
 
+/**
+ * 
+ * Get user routes
+ */
+
+/* get all users */
 Route::get('/users','UserController@index');
+
+/* get user by id */
+Route::get('/users/{id}','UserController@user');
+
+/* create new user */
+Route::post('/users','UserController@createUser');
+
+/*
+get all positions route
+*/
+Route::get('/positions','PositionController@getAll');
+
+/*
+Get token route
+*/
+Route::get('/token','TokenController@token');
