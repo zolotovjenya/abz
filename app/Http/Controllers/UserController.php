@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use Illuminate\Support\Facades\Validator;
 
-
 class UserController extends Controller
 {
     public function index(Request $req){
@@ -19,7 +18,7 @@ class UserController extends Controller
         $user = new User();
         $users = $user->with('position')->paginate($total);
 
-    	return response()->json($users);
+    	return response()->json(['success' => true, 'users' => $users]);
     }
 
     public function user(Request $request){
@@ -38,5 +37,22 @@ class UserController extends Controller
         }
 
     	return response()->json(['success' => true, 'user' => $data]);
+    }
+
+    public function createUser(Request $request){
+        $validator = Validator::make($request->all(), [
+            'name' => 'required|min:2|max:60',
+            'phone' => "required|regex: /^[\+]{0,1}380([0-9]{9})$/",
+            'email' => [
+                'required',
+                "email"
+            ],
+            'position_id' => 'required|numeric|min:1',
+            'photo' => 'required'
+        ]);
+
+        if ($validator->fails()) {
+            return response()->json($validator->errors(), 422);
+        }
     }
 }

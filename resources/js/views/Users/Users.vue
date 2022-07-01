@@ -1,5 +1,20 @@
 <template>
   <div class="table-responsive">
+      <div align="center">
+        <h2>Create User</h2>
+        <div class="mt-4"><input type="text" v-model="name" placeholder="Name" /></div>
+        <div class="mt-4"><input type="text" v-model="email" placeholder="Email" /></div>
+        <div class="mt-4"><input type="text" v-model="phone" placeholder="Phone" /></div>
+        <div class="mt-2">
+          <label>Select position</label><br/>
+          <select v-model="selectedPosition">
+            <option v-for="position in positionData" :value="position.id">{{position.name}}</option>
+          </select>
+        </div>
+        <div class="btn btn-primary mt-3" @click="save">Create User</div>
+      </div>  
+
+      <h2 align="center" class="mt-5">Users</h2>
       <table class="table table-bordered text-center">
           <thead>
               <tr>
@@ -52,10 +67,16 @@
                   default:null
                 },
                 pageCur: null,
+                name: null,
+                email: null,
+                phone: null,
+                selectedPosition: null,
+                positionData: []
             }
         },
         mounted(){
-          this.list()
+          this.list();
+          this.getPositions();
         },
         methods:{
             async list(page=1, count){  
@@ -75,7 +96,7 @@
                 }
 
                 await axios.get(`/api/users${url}`).then(({data})=>{
-                    this.users = data;
+                    this.users = data.users;
                 }).catch(({ response })=>{
                     console.error(response)
                 })
@@ -84,6 +105,28 @@
               let x = this.pageCur + 1;
 
               this.list(this.pageCur, 6 * x);
+            },
+            getPositions(){
+              axios.get(`/api/positions`).then(({data})=>{
+                  this.positionData = data.positions;
+              }).catch(({ response })=>{
+                  console.error(response)
+              })
+            },
+            save(){
+              axios.get(`/api/token`).then(({data})=>{
+                  if(data.token){
+                     axios.post(`/api/token`).then(({data})=>{
+                        if(data.token){
+                          
+                        }
+                      }).catch(({ response })=>{
+                          console.error(response)
+                      })       
+                  }
+              }).catch(({ response })=>{
+                  console.error(response)
+              })
             }
         }
     }
@@ -93,4 +136,6 @@
     .pagination{
         margin-bottom: 0;
     }
+
+    input, select{width: 400px}
 </style>
