@@ -27,4 +27,24 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+     * The accessors to append to the model's array form.
+     *
+     * @var array
+     */
+    protected $appends = ['photo_url'];
+
+    public function getPhotoUrlAttribute()
+    {
+        return '/public/photos/'.$this->attributes['photo_id'].'.jpg';
+    }
+
+    /**
+     * Get the position for the user.
+     */
+    public function position()
+    {
+        return $this->hasOne('App\Models\Positions', 'id', 'position_id');
+    }
 }
