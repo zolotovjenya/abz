@@ -1,0 +1,19 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine on
+    RewriteCond %{REQUEST_URI} !^public
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
+
+## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresDefault "access plus 0 seconds"
+#ExpiresByType image/jpg "access plus 60 minutes"
+#ExpiresByType image/jpeg "access plus 60 minutes"
+#ExpiresByType image/gif "access plus 60 minutes"
+#ExpiresByType image/png "access plus 60 minutes"
+#ExpiresByType image/svg "access plus 60 minutes"
+#ExpiresByType text/sass "access plus 60 minutes"
+#ExpiresByType text/javascript "access plus 60 minutes"
+</IfModule>
+## EXPIRES CACHING ##

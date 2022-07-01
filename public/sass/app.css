@@ -1,0 +1,1651 @@
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1600px;
+  }
+}
+
+/*-------- MALE --------*/
+
+/*FACE*/
+
+.male_face_1 {
+  position: absolute;
+  z-index: 100;
+  top: 0px;
+  left: 3px;
+}
+
+.male_face_2 {
+  position: absolute;
+  z-index: 100;
+  top: -1px;
+  left: -3px;
+}
+
+.male_face_3 {
+  position: absolute;
+  z-index: 100;
+  top: 1px;
+  left: 0px;
+}
+
+.male_face_4 {
+  position: absolute;
+  z-index: 100;
+  top: 1px;
+  left: -4px;
+}
+
+.male_face_5 {
+  position: absolute;
+  z-index: 100;
+  top: 1px;
+  left: 0px;
+}
+
+.male_face_6 {
+  position: absolute;
+  z-index: 100;
+  top: -1px;
+  left: -1px;
+}
+
+.male_face_7 {
+  position: absolute;
+  z-index: 100;
+  top: 2px;
+  left: -1px;
+}
+
+.male_face_8 {
+  position: absolute;
+  z-index: 100;
+  top: 1px;
+  left: -3px;
+}
+
+.male_face_9 {
+  position: absolute;
+  z-index: 100;
+  top: 0px;
+  left: -4px;
+}
+
+/*EYES*/
+
+.male_eyes_1 {
+  position: absolute;
+  left: 20px;
+  top: 38px;
+  z-index: 100;
+}
+
+.male_eyes_2 {
+  position: absolute;
+  left: 23px;
+  top: 38px;
+  z-index: 100;
+}
+
+/*HAIR*/
+
+.male_hair_1 {
+  position: absolute;
+  left: -33px;
+  top: -65px;
+  z-index: 101;
+}
+
+.male_hair_2 {
+  position: absolute;
+  left: -8px;
+  top: -26px;
+  z-index: 101;
+}
+
+.male_hair_3 {
+  position: absolute;
+  left: -3px;
+  top: -12px;
+  z-index: 101;
+}
+
+.male_hair_4 {
+  position: absolute;
+  left: -36px;
+  top: -69px;
+  z-index: 101;
+}
+
+.male_hair_5 {
+  position: absolute;
+  left: -2px;
+  top: -32px;
+  z-index: 101;
+}
+
+/*NOSE*/
+
+.male_nose_1,
+.male_nose_2 {
+  position: absolute;
+  left: 62px;
+  top: 73px;
+  z-index: 100;
+}
+
+/*MOUTH*/
+
+.male_mouth_1,
+.male_mouth_2 {
+  position: absolute;
+  left: 53px;
+  top: 96px;
+  z-index: 100;
+}
+
+/*BODY*/
+
+.male_body_1,
+.male_body_2,
+.male_body_3 {
+  position: absolute;
+  left: 33px;
+  top: 134px;
+}
+
+.male_body_4 {
+  position: absolute;
+  left: 18px;
+  top: 134px;
+}
+
+.male_body_5 {
+  position: absolute;
+  left: 23px;
+  top: 134px;
+}
+
+/*Clothes Pants Top*/
+
+.male_pants_top_brown_1,
+.male_pants_top_brown_2,
+.male_pants_top_brown_3 {
+  position: absolute;
+  left: 33px;
+  top: 249px;
+}
+
+.male_pants_top_brown_4 {
+  position: absolute;
+  left: 21px;
+  top: 249px;
+}
+
+.male_pants_top_brown_5 {
+  position: absolute;
+  left: 27px;
+  top: 249px;
+}
+
+/*Clothes Pants Shirt*/
+
+.male_clothes_shirt_green_1,
+.male_clothes_shirt_green_2,
+.male_clothes_shirt_green_3 {
+  position: absolute;
+  left: 32px;
+  top: 135px;
+}
+
+.male_clothes_shirt_green_4 {
+  position: absolute;
+  left: 17px;
+  top: 135px;
+}
+
+.male_clothes_shirt_green_5 {
+  position: absolute;
+  left: 23px;
+  top: 135px;
+}
+
+/*Clothes Pants Bottom Left*/
+
+.male_pants_bottom_left_brown_1 {
+  position: absolute;
+  left: 27px;
+  top: 275px;
+  z-index: 1;
+}
+
+.male_pants_bottom_left_brown_2 {
+  position: absolute;
+  left: 22px;
+  top: 274px;
+  z-index: 1;
+}
+
+.male_pants_bottom_left_brown_3 {
+  position: absolute;
+  left: 34px;
+  top: 274px;
+  z-index: 1;
+}
+
+.male_pants_bottom_left_brown_4 {
+  position: absolute;
+  left: -26px;
+  top: 275px;
+  z-index: 1;
+}
+
+.male_pants_bottom_left_brown_5 {
+  position: absolute;
+  left: 7px;
+  top: 275px;
+  z-index: 1;
+}
+
+.male_pants_bottom_left_brown_6 {
+  position: absolute;
+  left: 14px;
+  top: 275px;
+  z-index: 1;
+}
+
+.male_pants_bottom_left_brown_7 {
+  position: absolute;
+  left: 14px;
+  top: 275px;
+  z-index: 1;
+}
+
+.male_pants_bottom_left_brown_8 {
+  position: absolute;
+  left: 13px;
+  top: 275px;
+  z-index: 1;
+}
+
+/*Clothes Pants Bottom Right*/
+
+.male_pants_bottom_right_brown_1,
+.male_pants_bottom_right_brown_2,
+.male_pants_bottom_right_brown_4,
+.male_pants_bottom_right_brown_8 {
+  position: absolute;
+  left: 90px;
+  top: 275px;
+  z-index: 1;
+}
+
+.male_pants_bottom_right_brown_3 {
+  position: absolute;
+  left: 75px;
+  top: 275px;
+  z-index: 1;
+}
+
+.male_pants_bottom_right_brown_5 {
+  position: absolute;
+  left: 82px;
+  top: 275px;
+  z-index: 1;
+}
+
+.male_pants_bottom_right_brown_6 {
+  position: absolute;
+  left: 67px;
+  top: 275px;
+  z-index: 1;
+}
+
+.male_pants_bottom_right_brown_7 {
+  position: absolute;
+  left: 71px;
+  top: 275px;
+  z-index: 1;
+}
+
+/*Legs Left*/
+
+.male_legs_left_1,
+.male_legs_left_4 {
+  position: absolute;
+  left: -43px;
+  top: 275px;
+}
+
+.male_legs_left_2 {
+  position: absolute;
+  left: 12px;
+  top: 274px;
+}
+
+.male_legs_left_3 {
+  position: absolute;
+  left: 33px;
+  top: 275px;
+}
+
+.male_legs_left_5 {
+  position: absolute;
+  left: 7px;
+  top: 275px;
+}
+
+.male_legs_left_6,
+.male_legs_left_7 {
+  position: absolute;
+  left: 14px;
+  top: 275px;
+}
+
+.male_legs_left_8 {
+  position: absolute;
+  left: 13px;
+  top: 275px;
+}
+
+/*Legs Right*/
+
+.male_legs_right_6,
+.male_legs_right_7 {
+  position: absolute;
+  left: 51px;
+  top: 275px;
+}
+
+.male_legs_right_1,
+.male_legs_right_2,
+.male_legs_right_4,
+.male_legs_right_8 {
+  position: absolute;
+  left: 90px;
+  top: 275px;
+}
+
+.male_legs_right_3,
+.male_legs_right_5 {
+  position: absolute;
+  left: 71px;
+  top: 275px;
+}
+
+/*Shoes Left*/
+
+.male_shoes_left_1,
+.male_shoes_left_2 {
+  position: absolute;
+  left: 13px;
+  top: 411px;
+}
+
+.male_shoes_left_3 {
+  position: absolute;
+  left: 44px;
+  top: 407px;
+}
+
+.male_shoes_left_4 {
+  position: absolute;
+  left: -43px;
+  top: 387px;
+}
+
+.male_shoes_left_5 {
+  position: absolute;
+  left: 52px;
+  top: 364px;
+}
+
+.male_shoes_left_6 {
+  position: absolute;
+  left: 72px;
+  top: 365px;
+}
+
+.male_shoes_left_7 {
+  position: absolute;
+  left: 66px;
+  top: 287px;
+}
+
+.male_shoes_left_8 {
+  position: absolute;
+  left: 22px;
+  top: 359px;
+}
+
+/*Shoes Right*/
+
+.male_shoes_right_1 {
+  position: absolute;
+  left: 102px;
+  top: 411px;
+}
+
+.male_shoes_right_2 {
+  position: absolute;
+  left: 105px;
+  top: 411px;
+}
+
+.male_shoes_right_3 {
+  position: absolute;
+  left: 72px;
+  top: 407px;
+}
+
+.male_shoes_right_4 {
+  position: absolute;
+  left: 159px;
+  top: 388px;
+}
+
+.male_shoes_right_5 {
+  position: absolute;
+  left: 70px;
+  top: 365px;
+}
+
+.male_shoes_right_6 {
+  position: absolute;
+  left: 50px;
+  top: 366px;
+}
+
+.male_shoes_right_7 {
+  position: absolute;
+  left: 50px;
+  top: 286px;
+}
+
+.male_shoes_right_8 {
+  position: absolute;
+  left: 94px;
+  top: 360px;
+}
+
+/*Arms Left*/
+
+.male_arms_left_1 {
+  position: absolute;
+  left: -19px;
+  top: 143px;
+}
+
+.male_arms_left_2 {
+  position: absolute;
+  left: -24px;
+  top: 143px;
+}
+
+.male_arms_left_3 {
+  position: absolute;
+  left: -31px;
+  top: 143px;
+}
+
+.male_arms_left_4 {
+  position: absolute;
+  left: -40px;
+  top: 143px;
+}
+
+.male_arms_left_5 {
+  position: absolute;
+  left: -20px;
+  top: 143px;
+}
+
+.male_arms_left_6 {
+  position: absolute;
+  left: -15px;
+  top: 143px;
+}
+
+.male_arms_left_7 {
+  position: absolute;
+  left: 0px;
+  top: 143px;
+}
+
+.male_arms_left_8 {
+  position: absolute;
+  left: -38px;
+  top: 102px;
+}
+
+/*Arms Right*/
+
+.male_arms_right_1 {
+  position: absolute;
+  left: 96px;
+  top: 143px;
+}
+
+.male_arms_right_2,
+.male_arms_right_3,
+.male_arms_right_4,
+.male_arms_right_5,
+.male_arms_right_6,
+.male_arms_right_7 {
+  position: absolute;
+  left: 101px;
+  top: 143px;
+}
+
+.male_arms_right_8 {
+  position: absolute;
+  left: 101px;
+  top: 102px;
+}
+
+/*Shoulders Left*/
+
+.male_shoulders_left_green_1 {
+  position: absolute;
+  left: 10px;
+  top: 146px;
+  z-index: 1;
+}
+
+.male_shoulders_left_green_2,
+.male_shoulders_left_green_3 {
+  position: absolute;
+  left: 15px;
+  top: 144px;
+  z-index: 1;
+}
+
+.male_shoulders_left_green_4,
+.male_shoulders_left_green_5 {
+  position: absolute;
+  left: 18px;
+  top: 143px;
+  z-index: 1;
+}
+
+.male_shoulders_left_green_6 {
+  position: absolute;
+  left: 19px;
+  top: 143px;
+  z-index: 1;
+}
+
+.male_shoulders_left_green_7 {
+  position: absolute;
+  left: 23px;
+  top: 143px;
+  z-index: 1;
+}
+
+.male_shoulders_left_green_8 {
+  position: absolute;
+  left: 11px;
+  top: 137px;
+  z-index: 1;
+}
+
+/*Shoulders Right*/
+
+.male_shoulders_right_green_1 {
+  position: absolute;
+  left: 99px;
+  top: 146px;
+  z-index: 1;
+}
+
+.male_shoulders_right_green_2,
+.male_shoulders_right_green_3,
+.male_shoulders_right_green_4,
+.male_shoulders_right_green_5,
+.male_shoulders_right_green_6,
+.male_shoulders_right_green_7 {
+  position: absolute;
+  left: 101px;
+  top: 143px;
+  z-index: 1;
+}
+
+.male_shoulders_right_green_8 {
+  position: absolute;
+  left: 101px;
+  top: 137px;
+  z-index: 1;
+}
+
+/*Hands Left*/
+
+.male_hands_left_1 {
+  position: absolute;
+  left: -45px;
+  top: 207px;
+}
+
+.male_hands_left_2 {
+  position: absolute;
+  left: -50px;
+  top: 193px;
+}
+
+.male_hands_left_3 {
+  position: absolute;
+  left: -52px;
+  top: 157px;
+}
+
+.male_hands_left_4 {
+  position: absolute;
+  left: -52px;
+  top: 152px;
+}
+
+.male_hands_left_5 {
+  position: absolute;
+  left: -42px;
+  top: 145px;
+}
+
+.male_hands_left_6 {
+  position: absolute;
+  left: -30px;
+  top: 119px;
+}
+
+.male_hands_left_7 {
+  position: absolute;
+  left: -14px;
+  top: 125px;
+}
+
+.male_hands_left_8 {
+  position: absolute;
+  left: -53px;
+  top: 76px;
+}
+
+/*Hands Right*/
+
+.male_hands_right_1 {
+  position: absolute;
+  left: 149px;
+  top: 207px;
+}
+
+.male_hands_right_2 {
+  position: absolute;
+  left: 156px;
+  top: 196px;
+}
+
+.male_hands_right_3 {
+  position: absolute;
+  left: 161px;
+  top: 160px;
+}
+
+.male_hands_right_4 {
+  position: absolute;
+  left: 150px;
+  top: 147px;
+}
+
+.male_hands_right_5 {
+  position: absolute;
+  left: 152px;
+  top: 146px;
+}
+
+.male_hands_right_6 {
+  position: absolute;
+  left: 132px;
+  top: 119px;
+}
+
+.male_hands_right_7 {
+  position: absolute;
+  left: 117px;
+  top: 121px;
+}
+
+.male_hands_right_8 {
+  position: absolute;
+  left: 159px;
+  top: 76px;
+}
+
+/*--------- FEMALE ---------*/
+
+/*Hair Long*/
+
+.fem_hair_long_1 {
+  position: absolute;
+  left: 1px;
+  top: -17px;
+  z-index: 101;
+}
+
+.fem_hair_long_2 {
+  position: absolute;
+  left: 2px;
+  top: -22px;
+  z-index: 101;
+}
+
+.fem_hair_long_3,
+.fem_hair_long_5 {
+  position: absolute;
+  left: -5px;
+  top: -20px;
+  z-index: 101;
+}
+
+.fem_hair_long_4 {
+  position: absolute;
+  left: -1px;
+  top: -14px;
+  z-index: 101;
+}
+
+.fem_hair_long_6 {
+  position: absolute;
+  left: -18px;
+  top: -14px;
+  z-index: 101;
+}
+
+.fem_hair_long_7 {
+  position: absolute;
+  left: -4px;
+  top: -29px;
+  z-index: 101;
+}
+
+.fem_hair_long_8 {
+  position: absolute;
+  left: -15px;
+  top: -54px;
+  z-index: 101;
+}
+
+.fem_hair_long_9 {
+  position: absolute;
+  left: -13px;
+  top: -30px;
+  z-index: 101;
+}
+
+.fem_hair_long_10,
+.fem_hair_long_16 {
+  position: absolute;
+  left: 0;
+  top: -18px;
+  z-index: 101;
+}
+
+.fem_hair_long_11 {
+  position: absolute;
+  left: -19px;
+  top: -20px;
+  z-index: 101;
+}
+
+.fem_hair_long_12 {
+  position: absolute;
+  left: -8px;
+  top: -18px;
+  z-index: 101;
+}
+
+.fem_hair_long_13,
+.fem_hair_long_14 {
+  position: absolute;
+  left: -8px;
+  top: -26px;
+  z-index: 101;
+}
+
+.fem_hair_long_15 {
+  position: absolute;
+  left: -32px;
+  top: -29px;
+  z-index: 101;
+}
+
+.fem_hair_long_17 {
+  position: absolute;
+  left: 7px;
+  top: -47px;
+  z-index: 101;
+}
+
+.fem_hair_long_18 {
+  position: absolute;
+  left: 6px;
+  top: -27px;
+  z-index: 101;
+}
+
+.fem_hair_long_19 {
+  position: absolute;
+  left: -7px;
+  top: -34px;
+  z-index: 101;
+}
+
+.fem_hair_long_20 {
+  position: absolute;
+  left: -4px;
+  top: -20px;
+  z-index: 101;
+}
+
+/*Hair Medium*/
+
+.fem_hair_medium_1 {
+  position: absolute;
+  left: -9px;
+  top: -14px;
+  z-index: 101;
+}
+
+.fem_hair_medium_2 {
+  position: absolute;
+  left: -3px;
+  top: -18px;
+  z-index: 101;
+}
+
+.fem_hair_medium_3,
+.fem_hair_medium_6 {
+  position: absolute;
+  left: -6px;
+  top: -17px;
+  z-index: 101;
+}
+
+.fem_hair_medium_4 {
+  position: absolute;
+  left: -10px;
+  top: -22px;
+  z-index: 101;
+}
+
+.fem_hair_medium_5 {
+  position: absolute;
+  left: 0;
+  top: -17px;
+  z-index: 101;
+}
+
+.fem_hair_medium_7,
+.fem_hair_medium_20 {
+  position: absolute;
+  left: -2px;
+  top: -17px;
+  z-index: 101;
+}
+
+.fem_hair_medium_8 {
+  position: absolute;
+  left: -3px;
+  top: -23px;
+  z-index: 101;
+}
+
+.fem_hair_medium_9 {
+  position: absolute;
+  left: 2px;
+  top: -10px;
+  z-index: 101;
+}
+
+.fem_hair_medium_10 {
+  position: absolute;
+  left: 2px;
+  top: -22px;
+  z-index: 101;
+}
+
+.fem_hair_medium_11 {
+  position: absolute;
+  left: -27px;
+  top: -18px;
+  z-index: 101;
+}
+
+.fem_hair_medium_12 {
+  position: absolute;
+  left: -28px;
+  top: -20px;
+  z-index: 101;
+}
+
+.fem_hair_medium_13 {
+  position: absolute;
+  left: -18px;
+  top: -23px;
+  z-index: 101;
+}
+
+.fem_hair_medium_14 {
+  position: absolute;
+  left: -12px;
+  top: -25px;
+  z-index: 101;
+}
+
+.fem_hair_medium_15 {
+  position: absolute;
+  left: -6px;
+  top: -33px;
+  z-index: 101;
+}
+
+.fem_hair_medium_16,
+.fem_hair_medium_17 {
+  position: absolute;
+  left: -4px;
+  top: -11px;
+  z-index: 101;
+}
+
+.fem_hair_medium_18 {
+  position: absolute;
+  left: -24px;
+  top: -14px;
+  z-index: 101;
+}
+
+.fem_hair_medium_19 {
+  position: absolute;
+  left: -48px;
+  top: -27px;
+  z-index: 101;
+}
+
+/*Hair Short*/
+
+.fem_hair_short_1 {
+  position: absolute;
+  left: -14px;
+  top: -33px;
+  z-index: 101;
+}
+
+.fem_hair_short_2 {
+  position: absolute;
+  left: -11px;
+  top: -13px;
+  z-index: 101;
+}
+
+.fem_hair_short_3 {
+  position: absolute;
+  left: -1px;
+  top: -18px;
+  z-index: 101;
+}
+
+.fem_hair_short_4 {
+  position: absolute;
+  left: -1px;
+  top: -15px;
+  z-index: 101;
+}
+
+.fem_hair_short_5,
+.fem_hair_short_7,
+.fem_hair_short_8 {
+  position: absolute;
+  left: 7px;
+  top: -13px;
+  z-index: 101;
+}
+
+.fem_hair_short_6 {
+  position: absolute;
+  left: 53px;
+  top: -65px;
+  z-index: 101;
+}
+
+.fem_hair_short_9 {
+  position: absolute;
+  left: 8px;
+  top: -27px;
+  z-index: 101;
+}
+
+.fem_hair_short_10 {
+  position: absolute;
+  left: 25px;
+  top: -11px;
+  z-index: 101;
+}
+
+.fem_hair_short_11 {
+  position: absolute;
+  left: 2px;
+  top: -4px;
+  z-index: 101;
+}
+
+.fem_hair_short_12 {
+  position: absolute;
+  left: 100px;
+  top: 11px;
+  z-index: 101;
+}
+
+.fem_hair_short_13 {
+  position: absolute;
+  left: 4px;
+  top: -5px;
+  z-index: 101;
+}
+
+.fem_hair_short_14 {
+  position: absolute;
+  left: 2px;
+  top: -27px;
+  z-index: 101;
+}
+
+.fem_hair_short_15 {
+  position: absolute;
+  left: -18px;
+  top: -37px;
+  z-index: 101;
+}
+
+.fem_hair_short_16 {
+  position: absolute;
+  left: 7px;
+  top: -31px;
+  z-index: 101;
+}
+
+.fem_hair_short_17 {
+  position: absolute;
+  left: -29px;
+  top: -62px;
+  z-index: 101;
+}
+
+.fem_hair_short_18 {
+  position: absolute;
+  left: 6px;
+  top: -7px;
+  z-index: 101;
+}
+
+.fem_hair_short_19 {
+  position: absolute;
+  left: 0;
+  top: -24px;
+  z-index: 101;
+}
+
+.fem_hair_short_20 {
+  position: absolute;
+  left: 4px;
+  top: -43px;
+  z-index: 101;
+}
+
+/*Face*/
+
+.fem_face_1 {
+  position: absolute;
+  z-index: 100;
+  top: 3px;
+  left: 3px;
+}
+
+.fem_face_2 {
+  position: absolute;
+  z-index: 100;
+  top: 1px;
+  left: 4px;
+}
+
+.fem_face_3 {
+  position: absolute;
+  z-index: 100;
+  top: 4px;
+  left: 7px;
+}
+
+.fem_face_4 {
+  position: absolute;
+  z-index: 100;
+  top: 2px;
+  left: 11px;
+}
+
+.fem_face_5 {
+  position: absolute;
+  z-index: 100;
+  top: 3px;
+  left: 7px;
+}
+
+.fem_face_6 {
+  position: absolute;
+  z-index: 100;
+  top: 2px;
+  left: 6px;
+}
+
+.fem_face_7 {
+  position: absolute;
+  z-index: 100;
+  top: 5px;
+  left: 6px;
+}
+
+.fem_face_8 {
+  position: absolute;
+  z-index: 100;
+  top: 4px;
+  left: 4px;
+}
+
+.fem_face_9 {
+  position: absolute;
+  z-index: 100;
+  top: 3px;
+  left: 3px;
+}
+
+/*Body*/
+
+.fem_body_1 {
+  position: absolute;
+  left: 37px;
+  top: 136px;
+}
+
+.fem_body_2 {
+  position: absolute;
+  left: 31px;
+  top: 136px;
+}
+
+.fem_body_3,
+.fem_body_5 {
+  position: absolute;
+  left: 39px;
+  top: 136px;
+}
+
+.fem_body_4 {
+  position: absolute;
+  left: 40px;
+  top: 136px;
+}
+
+/*Clothes*/
+
+.fem_clothes_pink_turquoise_1 {
+  position: absolute;
+  left: 37px;
+  top: 137px;
+  z-index: 1;
+}
+
+.fem_clothes_pink_turquoise_2 {
+  position: absolute;
+  left: 31px;
+  top: 137px;
+  z-index: 1;
+}
+
+.fem_clothes_pink_turquoise_3,
+.fem_clothes_pink_turquoise_4,
+.fem_clothes_pink_turquoise_5 {
+  position: absolute;
+  left: 39px;
+  top: 137px;
+  z-index: 1;
+}
+
+/*Eyes*/
+
+.fem_eyes_1,
+.fem_eyes_3,
+.fem_eyes_5,
+.fem_eyes_8,
+.fem_eyes_10,
+.fem_eyes_12 {
+  position: absolute;
+  left: 28px;
+  top: 37px;
+  z-index: 100;
+}
+
+.fem_eyes_2,
+.fem_eyes_4,
+.fem_eyes_6,
+.fem_eyes_7,
+.fem_eyes_9,
+.fem_eyes_11,
+.fem_eyes_13 {
+  position: absolute;
+  left: 22px;
+  top: 37px;
+  z-index: 100;
+}
+
+/*Nose*/
+
+.fem_nose_1 {
+  position: absolute;
+  left: 66px;
+  top: 73px;
+  z-index: 100;
+}
+
+/*Mouth*/
+
+.fem_mouth_1,
+.fem_mouth_5,
+.fem_mouth_6,
+.fem_mouth_10 {
+  position: absolute;
+  left: 64px;
+  top: 96px;
+  z-index: 100;
+}
+
+.fem_mouth_2,
+.fem_mouth_3,
+.fem_mouth_4,
+.fem_mouth_9 {
+  position: absolute;
+  left: 61px;
+  top: 96px;
+  z-index: 100;
+}
+
+.fem_mouth_7,
+.fem_mouth_8,
+.fem_mouth_11 {
+  position: absolute;
+  left: 59px;
+  top: 96px;
+  z-index: 100;
+}
+
+.fem_mouth_12,
+.fem_mouth_13 {
+  position: absolute;
+  left: 54px;
+  top: 96px;
+  z-index: 100;
+}
+
+/*Back Hair Long*/
+
+.fem_back_hair_long_1 {
+  position: absolute;
+  left: -5px;
+  top: 2px;
+  z-index: 0;
+}
+
+/*Back Hair Medium*/
+
+.fem_back_hair_medium_1 {
+  position: absolute;
+  left: 0;
+  top: 2px;
+  z-index: 0;
+}
+
+/*Arms left*/
+
+.fem_arms_left_1,
+.fem_arms_left_5 {
+  position: absolute;
+  left: -12px;
+  top: 146px;
+}
+
+.fem_arms_left_2 {
+  position: absolute;
+  left: -17px;
+  top: 146px;
+}
+
+.fem_arms_left_3 {
+  position: absolute;
+  left: -24px;
+  top: 146px;
+}
+
+.fem_arms_left_4 {
+  position: absolute;
+  left: -33px;
+  top: 146px;
+}
+
+.fem_arms_left_6 {
+  position: absolute;
+  left: -7px;
+  top: 146px;
+}
+
+.fem_arms_left_7 {
+  position: absolute;
+  left: 7px;
+  top: 146px;
+}
+
+.fem_arms_left_8 {
+  position: absolute;
+  left: -32px;
+  top: 105px;
+}
+
+/*Arms right*/
+
+.fem_arms_right_1 {
+  position: absolute;
+  left: 103px;
+  top: 145px;
+}
+
+.fem_arms_right_2,
+.fem_arms_right_3,
+.fem_arms_right_4,
+.fem_arms_right_5,
+.fem_arms_right_6,
+.fem_arms_right_7 {
+  position: absolute;
+  left: 108px;
+  top: 145px;
+}
+
+.fem_arms_right_8 {
+  position: absolute;
+  left: 108px;
+  top: 104px;
+}
+
+/*Legs left*/
+
+.fem_legs_left_1 {
+  position: absolute;
+  left: 19px;
+  top: 277px;
+}
+
+.fem_legs_left_2 {
+  position: absolute;
+  left: 19px;
+  top: 277px;
+}
+
+.fem_legs_left_3 {
+  position: absolute;
+  left: 40px;
+  top: 277px;
+}
+
+.fem_legs_left_4 {
+  position: absolute;
+  left: -37px;
+  top: 277px;
+}
+
+.fem_legs_left_5 {
+  position: absolute;
+  left: 14px;
+  top: 277px;
+}
+
+.fem_legs_left_6,
+.fem_legs_left_7 {
+  position: absolute;
+  left: 21px;
+  top: 277px;
+}
+
+.fem_legs_left_8 {
+  position: absolute;
+  left: 19px;
+  top: 277px;
+}
+
+/*Legs right*/
+
+.fem_legs_right_1,
+.fem_legs_right_2,
+.fem_legs_right_4,
+.fem_legs_right_8 {
+  position: absolute;
+  left: 97px;
+  top: 277px;
+}
+
+.fem_legs_right_3,
+.fem_legs_right_5 {
+  position: absolute;
+  left: 78px;
+  top: 277px;
+}
+
+.fem_legs_right_6,
+.fem_legs_right_7 {
+  position: absolute;
+  left: 58px;
+  top: 277px;
+}
+
+/*Hands Left*/
+
+.fem_hands_left_1 {
+  position: absolute;
+  left: -34px;
+  top: 207px;
+}
+
+.fem_hands_left_2 {
+  position: absolute;
+  left: -45px;
+  top: 198px;
+}
+
+.fem_hands_left_3 {
+  position: absolute;
+  left: -45px;
+  top: 161px;
+}
+
+.fem_hands_left_4 {
+  position: absolute;
+  left: -46px;
+  top: 155px;
+}
+
+.fem_hands_left_5 {
+  position: absolute;
+  left: -35px;
+  top: 147px;
+}
+
+.fem_hands_left_6 {
+  position: absolute;
+  left: -23px;
+  top: 122px;
+}
+
+.fem_hands_left_7 {
+  position: absolute;
+  left: -8px;
+  top: 128px;
+  z-index: 101;
+}
+
+.fem_hands_left_8 {
+  position: absolute;
+  left: -49px;
+  top: 78px;
+}
+
+/*Hands Right*/
+
+.fem_hands_right_1 {
+  position: absolute;
+  left: 155px;
+  top: 209px;
+}
+
+.fem_hands_right_2 {
+  position: absolute;
+  left: 163px;
+  top: 197px;
+}
+
+.fem_hands_right_3 {
+  position: absolute;
+  left: 168px;
+  top: 163px;
+}
+
+.fem_hands_right_4 {
+  position: absolute;
+  left: 158px;
+  top: 149px;
+}
+
+.fem_hands_right_5 {
+  position: absolute;
+  left: 159px;
+  top: 148px;
+}
+
+.fem_hands_right_6 {
+  position: absolute;
+  left: 139px;
+  top: 121px;
+}
+
+.fem_hands_right_7 {
+  position: absolute;
+  left: 124px;
+  top: 123px;
+  z-index: 101;
+}
+
+.fem_hands_right_8 {
+  position: absolute;
+  left: 166px;
+  top: 79px;
+}
+
+/*Shoes left*/
+
+.fem_shoes_left_1 {
+  position: absolute;
+  left: 19px;
+  top: 410px;
+}
+
+.fem_shoes_left_2 {
+  position: absolute;
+  left: 18px;
+  top: 412px;
+}
+
+.fem_shoes_left_3 {
+  position: absolute;
+  left: 51px;
+  top: 409px;
+}
+
+.fem_shoes_left_4 {
+  position: absolute;
+  left: -37px;
+  top: 389px;
+}
+
+.fem_shoes_left_5 {
+  position: absolute;
+  left: 59px;
+  top: 366px;
+}
+
+.fem_shoes_left_6 {
+  position: absolute;
+  left: 79px;
+  top: 367px;
+}
+
+.fem_shoes_left_7 {
+  position: absolute;
+  left: 73px;
+  top: 289px;
+}
+
+.fem_shoes_left_8 {
+  position: absolute;
+  left: 28px;
+  top: 362px;
+}
+
+/*Shoes right*/
+
+.fem_shoes_right_1 {
+  position: absolute;
+  left: 110px;
+  top: 411px;
+}
+
+.fem_shoes_right_2 {
+  position: absolute;
+  left: 112px;
+  top: 413px;
+}
+
+.fem_shoes_right_3 {
+  position: absolute;
+  left: 79px;
+  top: 409px;
+}
+
+.fem_shoes_right_4 {
+  position: absolute;
+  left: 166px;
+  top: 389px;
+}
+
+.fem_shoes_right_5 {
+  position: absolute;
+  left: 77px;
+  top: 367px;
+}
+
+.fem_shoes_right_6 {
+  position: absolute;
+  left: 57px;
+  top: 368px;
+}
+
+.fem_shoes_right_7 {
+  position: absolute;
+  left: 57px;
+  top: 289px;
+}
+
+.fem_shoes_right_8 {
+  position: absolute;
+  left: 101px;
+  top: 362px;
+}
+
