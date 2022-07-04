@@ -7,8 +7,8 @@ use Illuminate\Support\Str;
 
 class TokenController extends Controller
 {
-    public function token(){
-        session(['token' => Str::random(32)]);
+    public function token(Request $request){
+        session(['token' => Str::random(275)]);
 
     	return response()->json(['success' => true, 'token' => session('token')]);
     }
