@@ -23,7 +23,11 @@ class UserSeederFacade{
 
             $resized = Tinify::getCropedCover();
 
+            $randName = new \Nubs\RandomNameGenerator\Alliteration();            
+
             for($i=0;$i<45;$i++){
+                $randNameStr = str_replace([' ', '-', "'"], '', $randName->getName());
+
                 $id = $i+1;
                 $name = "{$id}.jpg";
                 
@@ -32,13 +36,13 @@ class UserSeederFacade{
                 $photos[$i] = array(
                     'id' => $id,
                     'name' => $name
-                );
-
+                );                
+                                
                 $users[$i] = array(
                     'id' => $id,
-                    'name' => Str::ucfirst(Str::lower(Str::random(10))),
-                    'email' => Str::lower(Str::random(10).'@gmail.com'),
-                    'phone' => '+380'.Helper::phoneGenerator(),
+                    'name' => Str::ucfirst(Str::lower($randNameStr)),
+                    'email' => Helper::emailGenerator($randNameStr),
+                    'phone' => Helper::phoneGenerator(),
                     'photo_id' => $id,
                     'position_id' => Arr::random($positions),
                     'registration_timestamp' => Carbon::now()->timestamp
