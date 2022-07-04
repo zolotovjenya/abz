@@ -1,18 +1,37 @@
 <template>
   <div class="table-responsive">
-      <div align="center">
+      <form class="m-5">
         <h2>Create User</h2>
-        <div class="mt-4"><input type="text" v-model="name" placeholder="Name" /></div>
-        <div class="mt-4"><input type="text" v-model="email" placeholder="Email" /></div>
-        <div class="mt-4"><input type="text" v-model="phone" placeholder="Phone" /></div>
-        <div class="mt-2">
-          <label>Select position</label><br/>
-          <select v-model="selectedPosition">
+        
+        <div v-if="errors" class="bg-red-500 text-danger py-2 px-4 pr-0 rounded font-bold mb-4 shadow-lg">
+          <div v-for="(v, k) in errors" :key="k">
+            <p v-for="error in v" :key="error" class="text-sm">
+              {{ error }}
+            </p>
+          </div>
+        </div>
+
+        <div class="form-group mt-2">
+          <input type="text" class="form-control form-control-lg" v-model="name" placeholder="Name" />
+        </div>
+        <div class="form-group mt-2">
+          <input type="text" class="form-control form-control-lg"  v-model="email" placeholder="Email" />
+        </div>
+        <div class="form-group mt-2">
+          <input type="text" class="form-control form-control-lg" v-model="phone" placeholder="Phone" />
+        </div>
+        <div class="form-group mt-2">
+          <select class="form-control form-control-lg" v-model="selectedPosition">
+            <option value="0" disabled selected>Select position</option>
             <option v-for="position in positionData" :value="position.id">{{position.name}}</option>
           </select>
         </div>
+        <div class="form-group mt-2">
+          <label for="photo">Photo</label>
+          <input type="file" ref="photo" class="form-control-file" id="photo">
+        </div>
         <div class="btn btn-primary mt-3" @click="save">Create User</div>
-      </div>  
+      </form>  
 
       <h2 align="center" class="mt-5">Users</h2>
       <table class="table table-bordered text-center">
@@ -47,8 +66,6 @@
           </tbody>
       </table>
       <Pagination class="mt-3" align="center" :data="users" @pagination-change-page="list"></Pagination>
-
-      <div align="center" class="mt-3 text-primary" style="cursor: pointer" @click="showMore()"><u>Show more</u></div>
   </div>
 </template>
 
@@ -66,12 +83,13 @@
                   type:Object,
                   default:null
                 },
-                pageCur: null,
                 name: null,
                 email: null,
                 phone: null,
-                selectedPosition: null,
-                positionData: []
+                photo: null,
+                selectedPosition: 0,
+                positionData: [],
+                errors: null,
             }
         },
         mounted(){
@@ -79,32 +97,12 @@
           this.getPositions();
         },
         methods:{
-            async list(page=1, count){  
-                this.pageCur = page;            
-                
-                if(count){
-                  page = page + 1;
-
-                  this.pageCur = page;
-                }                
-
-                let url = `?`;
-                if(count){
-                  url += `&count=${count}`;
-                } else {
-                  url += `&page=${page}`;
-                }
-
-                await axios.get(`/api/users${url}`).then(({data})=>{
+            async list(page=1){                  
+                await axios.get(`/api/users?page=${page}&count=6`).then(({data})=>{
                     this.users = data.users;
                 }).catch(({ response })=>{
                     console.error(response)
                 })
-            },
-            showMore(){              
-              let x = this.pageCur + 1;
-
-              this.list(this.pageCur, 6 * x);
             },
             getPositions(){
               axios.get(`/api/positions`).then(({data})=>{
@@ -116,13 +114,26 @@
             save(){
               axios.get(`/api/token`).then(({data})=>{
                   if(data.token){
-                     axios.post(`/api/token`).then(({data})=>{
-                        if(data.token){
-                          
-                        }
-                      }).catch(({ response })=>{
-                          console.error(response)
-                      })       
+
+                    let user = new FormData();
+
+                    user.append('name', this.name);
+                    user.append('email', this.email);
+                    user.append('phone', this.phone);
+                    user.append('position_id', this.selectedPosition);
+                    user.append('photo', this.$refs.photo.files[0]);
+
+                    axios.post(
+                      `/api/users`, 
+                      user,
+                      { headers:{'Token' : data.token}}
+                    ).then(({data})=>{
+                      alert(data.message);
+                      
+                      location.reload();
+                    }).catch(({ response })=>{
+                      this.errors = response.data.fails;
+                    })       
                   }
               }).catch(({ response })=>{
                   console.error(response)
@@ -136,6 +147,4 @@
     .pagination{
         margin-bottom: 0;
     }
-
-    input, select{width: 400px}
 </style>
