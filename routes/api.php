@@ -26,7 +26,7 @@ use App\Http\Controllers\PositionController;
  */
 
 /* get all users */
-Route::get('/users','UserController@index');
+Route::get('/users','UserController@users');
 
 /* get user by id */
 Route::get('/users/{id}','UserController@user');
