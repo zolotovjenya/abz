@@ -2,10 +2,10 @@
 namespace App\SeederAdditional\User;
 
 class Tinify{
-    public static function getCropedCover(){
+    public static function getCropedCover($image = false){
         \Tinify\setKey(config('tinify.apiKey'));
 
-        $source = \Tinify\fromFile(config('tinify.firstlyIcon'));
+        $source = \Tinify\fromFile($image ? $image : config('tinify.firstlyIcon'));
 
         return $source->resize(array(
             "method" => "cover",
